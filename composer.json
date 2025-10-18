@@ -1,0 +1,41 @@
+{
+    "name": "yii2-rest-api/sum-even-numbers",
+    "description": "REST API for calculating sum of even numbers",
+    "type": "project",
+    "require": {
+        "php": ">=8.3",
+        "yiisoft/yii2": "~2.0.49",
+        "yiisoft/yii2-composer": "~2.0.0",
+        "spatie/data-transfer-object": "^3.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "~2.2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        },
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "app\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
+        }
+    }
+}
