@@ -107,11 +107,13 @@ test/
 │   └── UseCases/
 │       └── CalculateSumOfEvenNumbersUseCase.php   # Use Case
 │
-├── tests/                       # Unit тести
-│   ├── Unit/
-│   │   ├── Dtos/               # Тести для DTO (9 тестів)
-│   │   ├── Models/             # Тести для моделей (8 тестів)
-│   │   └── Services/           # Тести для сервісів (8 тестів)
+├── tests/                       # Тести
+│   ├── Unit/                   # Unit тести
+│   │   ├── Dtos/               # Тести для DTO
+│   │   ├── Models/             # Тести для моделей
+│   │   └── Services/           # Тести для сервісів
+│   ├── Integration/            # Інтеграційні тести
+│   │   └── ApiTest.php         # API тести (HTTP запити)
 │   └── bootstrap.php
 │
 ├── web/                         # Публічна директорія

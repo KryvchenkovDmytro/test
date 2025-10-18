@@ -21,6 +21,7 @@ class SumResource extends JsonResource
      */
     public function toArray(): array
     {
+        /** @var SumResponseDto $this->resource */
         return [
             'sum' => $this->resource->getSum(),
         ];
