@@ -15,12 +15,12 @@ class EvenNumbersCalculator implements CalculatorInterface
      */
     public function calculateSumOfEvenNumbers(NumbersRequestDto $dto): SumResponseDto
     {
-        $numbers = $dto->getNumbers();
-        $sum = 0;
+        $evenNumbers = array_filter(
+            $dto->getNumbers(),
+            fn($num) => $num % 2 === 0
+        );
 
-        array_map(function ($item) use(&$sum) {
-            $sum += $item % 2 === 0 ? $item : 0;
-        }, $numbers);
+        $sum = array_sum($evenNumbers);
 
         return new SumResponseDto(sum: $sum);
     }

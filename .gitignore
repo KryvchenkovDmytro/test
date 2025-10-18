@@ -1,6 +1,42 @@
+# Dependencies
 /vendor/
+
+# Runtime files
 /runtime/
+
+# Web assets
 /web/assets/
+
+# Environment
 .env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Composer
 composer.lock
+composer.phar
+
+# PHPUnit
+.phpunit.cache/
+.phpunit.result.cache
+
+# Supervisor
+supervisord.log
+supervisord.pid
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
